@@ -1,81 +1,60 @@
 <h1 align="center">Jason Lee</h1>
-<p align="center"><strong>Environmental chemist · Systems architect · Creator of Titan Zero</strong></p>
+<p align="center"><strong>AI Systems Developer · Qualified Environmental Chemist · Creator of Titan Zero</strong></p>
+<p align="center">Building evidence-led AI workflows where recommendations and authority stay separate.</p>
 
-I design and develop systems for a question I keep returning to: **how can technological intelligence become more capable without quietly becoming the authority?**
+I design and build AI-enabled software for decisions, research, and business operations. My environmental chemistry background shapes how I handle evidence, provenance, uncertainty, and reproducibility.
 
-My work brings environmental science and software architecture together. The central thread is **Titan Zero**: a persistent, model-independent intelligence layer for people and businesses, with an AI workforce that can understand, coordinate, and perform work under explicit human authority.
+I’m interested in AI developer and AI systems engineering roles involving agentic workflows, applied AI, evaluation, and reliable software.
 
-## The architecture I’m building
+## Engineering focus
 
-A model can interpret information or recommend an action. That alone should never make the information true, grant permission, or execute the action. Titan Zero separates those responsibilities:
+- **AI workflows:** Connect model-assisted interpretation to structured tasks, scoped tools, explicit approvals, and reviewable outcomes.
+- **Decision and evaluation systems:** Represent evidence, constraints, uncertainty, alternatives, and abstention explicitly; test behaviour with fixed scenarios and baselines.
+- **Operational software:** Build tenant-aware workflows, offline-capable field tools, and governed integrations.
 
-| Layer | Responsibility |
+A model can interpret and recommend. The application still needs to verify evidence, resolve company scope, check policy, and record what an approved action changed.
+
+| Stage | Engineering question |
 | --- | --- |
-| **Reality** | Evidence, source, freshness, uncertainty, and conflicts about what is happening |
-| **Zero** | An evolving, revisable understanding of a person, business, and working context |
-| **Decision** | An explainable recommendation or conclusion, with its evidence and constraints |
-| **Authority** | Who may do what, for which company, within what scope and time |
-| **Execution** | Approved work carried out through governed commands, connected systems, or the workforce |
+| **Evidence and context** | What is known, where did it come from, how current is it, and what conflicts? |
+| **Decision** | Which options meet hard requirements, and what remains uncertain? |
+| **Authority** | Who may act, for which company, within what scope and time? |
+| **Execution** | What changed, how is the result checked, and what can be recovered? |
 
-The system is designed to carry evidence and outcomes through the full cycle—from observation and decision to authorized action, verification, learning, and recovery.
+## Measured test evidence
 
-## Infrastructure and operational evidence
+### CI-backed evaluations
 
-This portfolio spans **36 public repositories** in the current GitHub account listing. The contribution graph reflects sustained, issue-driven engineering across that portfolio: implementation is decomposed into scoped missions, cross-repository contracts are coordinated, and substantial changes carry review and verification records.
+- **[Titan Decision Engine · 20-case evaluation](https://github.com/Masterleeaus/decision-engine/actions/runs/37170763045)** · 4 October 2026. Step 27 produced **0/17 ready handoffs** for blocked or unresolved cases, wrongly blocked **0/3 valid cases**, generated **0/2 requests** for wrong-company attempts, and had **0/20 undispatched-request contract violations**. A recommendation-only baseline treated 15/17 blocked or unresolved cases as actionable. This tests request preparation, not host persistence, approval, or execution. [Method and full report](https://github.com/Masterleeaus/decision-engine#reproducible-authority-handoff-evaluation).
+- **[Titan Interaction Engine · 31-case policy evaluation](https://github.com/Masterleeaus/Interaction-engine/actions/runs/37171514412)** · 4 October 2026. **0/24 blocked requests** were allowed, **0/7 valid requests** were wrongly denied, and **0/1 cross-tenant approval attempts** passed. This evaluates policy decisions, not host adapters, persistence, or downstream execution. [Method and full report](https://github.com/Masterleeaus/Interaction-engine#reproducible-authority-policy-evaluation).
+- **[Titan Trust Engine · 32-case GPS-signal evaluation](https://github.com/Masterleeaus/Trust-Engine/actions/runs/37172099402)** · 4 October 2026. **0/32 trust-level mismatches**, **0/32 quality-flag mismatches**, and **0/32 scenario failures**. The evaluation also surfaced a design diagnostic: all 3 GPS-present cases with missing accuracy still receive a high signal, while carrying a no-accuracy flag. GPS signals do not prove attendance or truth. [Method and full report](https://github.com/Masterleeaus/Trust-Engine#reproducible-trust-signal-evaluation).
 
-A concrete example is **[Titan Zero PR #1201](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/pull/1201)**, merged on 2 October 2026. GitHub records **7,573 additions, 383 deletions, and 29 conversation comments**. The thread documents ownership boundaries across related missions, independent adversarial findings, corrections and exact-head test results. It also records the approval scope accurately: a bounded runtime slice was merged, while the broader mission and live-host commissioning remained open.
+All three evaluation workflows completed successfully in GitHub Actions. These results measure bounded reference behavior and policy; they do not establish production readiness.
 
-The work is designed around explicit company context, capability permissions, risk checks, execution receipts, and separate verification. I do not treat merge volume, agent agreement, or a green test as proof that a full product is production-ready.
+### Local suite runs
 
-**Measured authority handoff result (4 October 2026): 0 of 17 blocked or unresolved scenarios produced a ready handoff.** The fixed 20-case evaluation also wrongly blocked 0 of 3 valid recommendations and produced requests for 0 of 2 wrong-company attempts. A deliberately simple recommendation-only baseline would proceed on 15 of those 17 blocked or unresolved cases. This measures Step 27 request preparation, not host execution. [Method, scenarios, full results and CI run](https://github.com/Masterleeaus/decision-engine#reproducible-authority-handoff-evaluation).
+- **Titan Decision Engine:** In the 4 October deep-scan run, all **16 test files for Steps 10–25 passed after TypeScript compilation**, and **33 tests for Steps 26–30 passed**. These are local results, not a CI run. [Reference-engine source and tests](https://github.com/Masterleeaus/decision-engine/tree/main/engines).
+- **Titan Zero Field Service Workforce:** Focused checks recorded **31/31 passes**: session lifecycle 14/14, DirectAdmin owner boundaries 12/12, and Communications reader 5/5. The tests used temporary execution overlays; the tested implementation is unpublished, and clean-checkout reproduction and live-host verification remain pending. [Commands, revisions, coverage, and limits](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
 
-### Local runtime boundary tests · 4 October 2026
+## Selected projects
 
-Focused developer-local tests in **Titan Zero Field Service Workforce** recorded:
-- **Session lifecycle: 14/14 passed**, covering company-scoped demotion/revocation, stale-context rejection and preservation of another company's membership.
-- **DirectAdmin owners: 12/12 passed**, covering reassignment, authority denial, replay, company isolation and cancellation uncertainty.
-- **Communications reader: 5/5 passed**, covering company-filtered reads and keeping provider acknowledgement unverified.
+| Project | Engineering work |
+| --- | --- |
+| [Titan Decision Engine](https://github.com/Masterleeaus/decision-engine) | TypeScript decision-support reference engines for evidence, hard constraints, ranking, uncertainty, abstention, history, and capability-gated handoff. The host retains approval and execution. |
+| [Titan Interaction Engine](https://github.com/Masterleeaus/Interaction-engine) | Governed interaction workflows across conversation and offline surfaces, with tenant-scoped context and a separately evaluated policy engine. |
+| [Titan Trust Engine](https://github.com/Masterleeaus/Trust-Engine) | PHP/Laravel evidence-assurance extension for job evidence, configurable requirements, readiness, and human review. Trust signals inform review; they do not establish truth or authority. |
+| [Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) | TypeScript operating platform for field-service workflows, offline work, company boundaries, and authority-gated execution. |
+| [Climate Crew](https://github.com/Masterleeaus/Climate-crew) | Python research-platform prototype for multi-agent climate and environmental investigation, evidence provenance, competing hypotheses, and human validation. |
+| [ForgeMesh](https://github.com/Masterleeaus/ForgeMesh) | Repository-intelligence project that composes task-specific AI engineering teams from detected architecture, risks, and required capabilities. |
 
-The tested implementation remains unpublished, and the runs used temporary execution overlays. These results support the specific behaviours tested; clean-checkout reproduction and live-host verification are still pending. [Detailed evidence, commands, local revisions and limitations](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
+These repositories span **TypeScript/Node.js, Python, and PHP/Laravel**, with work on structured APIs, workflow orchestration, reproducible evaluations, and evidence-aware systems.
 
-**Measured Interaction Engine policy result (4 October 2026): 0 of 24 blocked scenarios were allowed; 0 of 7 valid scenarios were wrongly denied; 0 of 1 cross-tenant approval attempts passed.** The allow-all baseline would pass all 24 blocked cases. This evaluates policy decisions, not host execution. [31-case method, scenarios, results and CI run](https://github.com/Masterleeaus/Interaction-engine#reproducible-authority-policy-evaluation).
+## Delivery example
 
-**Measured Trust Engine signal result (4 October 2026): all 32 cases matched the documented rubric, including 0/6 high signals without GPS, 0/5 high signals above 500 m accuracy, and 8/8 correct medium-threshold cases.** The evaluation also found that all 3 GPS-present cases with missing accuracy still receive high, while carrying a `no_accuracy` flag. This evaluates a coarse GPS signal, not proof of attendance. [Method, full results and CI run](https://github.com/Masterleeaus/Trust-Engine#reproducible-trust-signal-evaluation).
-
-## Featured systems by architectural role
-
-| System | Role | Distinctive work |
-| --- | --- | --- |
-| [Climate Crew](https://github.com/Masterleeaus/Climate-crew) | **Scientific discovery** | Independent climate and environmental research, evidence provenance, competing hypotheses, falsification, replication, uncertainty, and human validation. |
-| [Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) | **Governed business execution** | Connects customer and field workflows to a company-scoped workforce, with authority, execution, recovery, and evidence boundaries. |
-| [Titan Zero Interaction Engine](https://github.com/Masterleeaus/Interaction-engine) | **Context and intent** | Turns chat, voice, mobile, desktop, and API interactions into structured workflows while keeping recommendation, approval, and execution distinct. |
-| [Titan Decision Engine](https://github.com/Masterleeaus/decision-engine) | **Decision intelligence** | Builds inspectable, constraint-aware recommendations from evidence, uncertainty, preferences, and predicted trade-offs; it does not authorize or execute them. |
-| [ForgeMesh](https://github.com/Masterleeaus/ForgeMesh) | **Adaptive engineering infrastructure** | Scans repository architecture and selects a minimum-sufficient specialist workforce, with explicit responsibilities and verification. |
-
-## Systems I’ve conceived and developed
-
-- **[Titan Trust Engine](https://github.com/Masterleeaus/Trust-Engine)** — Captures job evidence, file hashes, attendance and presence signals, incidents, and client sign-off; applies configurable evidence requirements and readiness; connects records to assurance and human review. Its heuristic trust signals inform review and do not prove truth or grant authority.
-- **[Titan Decision Engine](https://github.com/Masterleeaus/decision-engine)** — Turns evidence, objectives, options, constraints, preferences, predicted outcomes, and uncertainty into explainable recommendations. A DecisionPacket preserves reasoning for downstream governance; the engine does not authorize or execute.
-- **Governance, Risk and Assurance** — A coordinated control layer that checks policy, evidence, risk, delegation, and required approval before and during consequential work.
-- **[Titan Zero Interaction Engine](https://github.com/Masterleeaus/Interaction-engine)** — Connects chat, voice, mobile, desktop, and API interactions to schema-driven workflows, tenant-scoped context, capability policies, and an offline companion. Understanding intent remains separate from authority.
-- **Titan Zero Evolution Engine** — Extends onboarding into a continuous cycle: discover, configure, verify, observe change, diagnose, preview, approve, reconfigure, measure outcomes, and learn.
-- **Signal, Prime, Nexus and Forge** — Distinct roles in the wider system: Signal surfaces what deserves attention; Prime carries enduring missions; Nexus coordinates work across systems; Forge extends capability under governance.
-- **Evidence Ledger and Rewind** — Preserve the provenance of consequential decisions and actions, support verification, and provide a path to recovery or compensation where reversal is possible.
-- **Company-scoped AI workforce** — Organizes managers, specialists, and workers around business capabilities while keeping company boundaries, human delegation, and each role’s authority explicit.
-
-These ideas are being translated into architecture, prototypes, and active software across my repositories. Individual systems are at different implementation stages; I aim to distinguish documented design from verified behavior.
+[ Titan Zero PR #1201 ](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/pull/1201) is a bounded, issue-scoped runtime change. Review surfaced authority-revocation, identity-boundary, hung-operation, and storage-lock risks; follow-up changes and exact-head checks informed the merge. The linked record keeps the merge scope separate from the wider mission and live-host commissioning.
 
 ## Contact
 
-For engineering, research, or collaboration enquiries: [masterlee.aus@gmail.com](mailto:masterlee.aus@gmail.com).
-
-## Where the ideas meet practice
-
-- **[Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce)** — Applies the architecture to customers, jobs, scheduling, field work, offline operation, and a governed workforce.
-- **[Climate Crew](https://github.com/Masterleeaus/Climate-crew)** — Applies a related evidence-first approach to environmental research: independent investigation, provenance, competing hypotheses, falsification, and human validation.
-- **[Titan Developer Workforce Extension](https://github.com/Masterleeaus/Developer-Workforce-Extension-)** — Explores composable specialist profiles, workforce orchestration, bounded capabilities, and verification.
-- **[WorkCore Extension Suite](https://github.com/Masterleeaus/workcore-extensions)** — Separates business domains through explicit package ownership and integration contracts.
-
-My environmental chemistry background shapes how I approach technical claims: follow the evidence, retain uncertainty, and make a system’s actual limits visible.
+For AI development, engineering, research, or collaboration enquiries: [jason@titanzero.io](mailto:jason@titanzero.io).
 
 [Explore all repositories](https://github.com/Masterleeaus?tab=repositories)
