@@ -1,6 +1,7 @@
 <h1 align="center">Jason Lee</h1>
-<p align="center"><strong>AI Systems Developer · Environmental Chemistry · Creator of Titan Zero</strong></p>
+<p align="center"><strong>AI Systems Developer · Agent Reliability & Evaluation · Titan Zero</strong></p>
 <p align="center">Melbourne, Australia · <a href="mailto:jason@titanzero.io">jason@titanzero.io</a></p>
+<p align="center">BSc, Environmental Chemistry major — Griffith University (2015) · MBA — Australian Institute of Business (2018)</p>
 
 I build AI-enabled software where model suggestions meet evidence, evaluation, and clear authority boundaries. My environmental chemistry background informs how I handle uncertainty, provenance, and reproducibility.
 
