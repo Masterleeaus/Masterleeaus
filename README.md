@@ -51,7 +51,7 @@ These repositories span **TypeScript/Node.js, Python, and PHP/Laravel**, with wo
 
 ## Delivery example
 
-[ Titan Zero PR #1201 ](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/pull/1201) is a bounded, issue-scoped runtime change. Review surfaced authority-revocation, identity-boundary, hung-operation, and storage-lock risks; follow-up changes and exact-head checks informed the merge. The linked record keeps the merge scope separate from the wider mission and live-host commissioning.
+[Titan Zero PR #1201](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/pull/1201) is a bounded, issue-scoped runtime change. Review surfaced authority-revocation, identity-boundary, hung-operation, and storage-lock risks; follow-up changes and exact-head checks informed the merge. The linked record keeps the merge scope separate from the wider mission and live-host commissioning.
 
 ## Contact
 
