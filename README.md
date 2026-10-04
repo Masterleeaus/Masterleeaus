@@ -40,6 +40,8 @@ The tested implementation remains unpublished, and the runs used temporary execu
 
 **Measured Interaction Engine policy result (4 October 2026): 0 of 24 blocked scenarios were allowed; 0 of 7 valid scenarios were wrongly denied; 0 of 1 cross-tenant approval attempts passed.** The allow-all baseline would pass all 24 blocked cases. This evaluates policy decisions, not host execution. [31-case method, scenarios, results and CI run](https://github.com/Masterleeaus/Interaction-engine#reproducible-authority-policy-evaluation).
 
+**Measured Trust Engine signal result (4 October 2026): all 32 cases matched the documented rubric, including 0/6 high signals without GPS, 0/5 high signals above 500 m accuracy, and 8/8 correct medium-threshold cases.** The evaluation also found that all 3 GPS-present cases with missing accuracy still receive high, while carrying a `no_accuracy` flag. This evaluates a coarse GPS signal, not proof of attendance. [Method, full results and CI run](https://github.com/Masterleeaus/Trust-Engine#reproducible-trust-signal-evaluation).
+
 ## Featured systems by architectural role
 
 | System | Role | Distinctive work |
