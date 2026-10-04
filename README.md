@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="assets/profile-banner.svg" alt="Jason Lee engineering portfolio banner: evidence, evaluation, review, authorization, and scoped execution." width="100%" />
-</p>
 
 <h1 align="center">Jason Lee</h1>
 <p align="center"><strong>AI Systems Developer · Agent Reliability & Evaluation · Titan Zero</strong></p>
