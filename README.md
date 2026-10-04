@@ -38,6 +38,8 @@ Focused developer-local tests in **Titan Zero Field Service Workforce** recorded
 
 The tested implementation remains unpublished, and the runs used temporary execution overlays. These results support the specific behaviours tested; clean-checkout reproduction and live-host verification are still pending. [Detailed evidence, commands, local revisions and limitations](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
 
+**Measured Interaction Engine policy result (4 October 2026): 0 of 24 blocked scenarios were allowed; 0 of 7 valid scenarios were wrongly denied; 0 of 1 cross-tenant approval attempts passed.** The allow-all baseline would pass all 24 blocked cases. This evaluates policy decisions, not host execution. [31-case method, scenarios, results and CI run](https://github.com/Masterleeaus/Interaction-engine#reproducible-authority-policy-evaluation).
+
 ## Featured systems by architectural role
 
 | System | Role | Distinctive work |
