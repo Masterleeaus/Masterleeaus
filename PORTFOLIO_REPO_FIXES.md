@@ -124,10 +124,10 @@ Remaining failures from the reviewed run:
 11. presence authorization verifies active company membership
 12. conversation broadcast authorization is company scoped
 13. private user broadcast channel is company scoped
-14. `/.worktrees` is protected in `.gitignore`
-15. `/storage/integration-evidence` is protected in `.gitignore`
+14. `/.worktrees` is protected in `.gitignore` — **fixed on `main` after the reviewed run**
+15. `/storage/integration-evidence` is protected in `.gitignore` — **fixed on `main` after the reviewed run**
 
-Several are straightforward, but they touch runtime ownership/route/tenancy decisions and should be corrected deliberately rather than making the verifier less strict.
+The two gitignore failures have now been repaired, so **13 source/architecture failures remain from that historical list pending a fresh verifier run**. The remaining items touch runtime ownership/route/tenancy decisions and should be corrected deliberately rather than making the verifier less strict.
 
 ---
 
