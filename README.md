@@ -58,14 +58,14 @@ Historical repository names are retained where they represent separate engineeri
 | [Titan Decision Engine](https://github.com/Masterleeaus/decision-engine) | TypeScript reference engines for evidence, constraints, uncertainty, recommendations, and capability-gated handoff. |
 | [Titan Interaction Engine](https://github.com/Masterleeaus/Interaction-engine) | Tenant-scoped interaction workflows and separately evaluated policy decisions. |
 | [Titan Trust Engine](https://github.com/Masterleeaus/Trust-Engine) | PHP/Laravel evidence assurance, readiness signals, and human review workflows. |
-| [Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) | Company-scoped field operations, offline work, and governed execution. |
+| [Titan Field](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) | Company-scoped field operations, offline work, and governed execution. |
 | [Climate Crew](https://github.com/Masterleeaus/Climate-crew) | Python research-platform prototype for climate and environmental investigation. |
 | [ForgeMesh](https://github.com/Masterleeaus/ForgeMesh) | Repository intelligence for composing task-specific AI engineering teams. |
 
 ## Work in progress
 
 - **LLM-in-the-loop evaluation:** [Merged PR #2](https://github.com/Masterleeaus/decision-engine/pull/2) adds a 200-case synthetic proposer-to-gate harness. The [offline CI smoke check](https://github.com/Masterleeaus/decision-engine/actions/runs/37174873332) passed; a live-model evaluation has not run yet.
-- **Field Service local checks:** a developer-local record lists 31/31 focused checks on temporary overlays. The tested implementation is unpublished and clean-checkout reproduction is pending, so this is development evidence rather than a public CI result. [Details and limits](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
+- **Titan Field local checks:** a developer-local record lists 31/31 focused checks on temporary overlays. The tested implementation is unpublished and clean-checkout reproduction is pending, so this is development evidence rather than a public CI result. [Details and limits](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
 - **Climate Crew:** remains a prototype; I have not published a reproduced scientific result yet.
 
 ## Delivery example
