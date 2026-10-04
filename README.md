@@ -26,6 +26,10 @@ These are small, bounded suites. The intervals describe the synthetic test count
 
 **Decision Engine · local run, 4 Oct 2026 · Node 24.19.0 · unpinned checkout:** 16/16 test files for Steps 10–25 passed after TypeScript compilation; 33/33 tests for Steps 26–30 passed. This was a local run, not CI, and its source commit was not recorded. [Reference-engine source and tests](https://github.com/Masterleeaus/decision-engine/tree/main/engines).
 
+## Repository audit register
+
+The current portfolio-wide maintenance and manual-fix register is tracked in [PORTFOLIO_REPO_FIXES.md](PORTFOLIO_REPO_FIXES.md). It separates completed fixes from CI reruns, architecture decisions, environment-dependent verification, licensing/provenance review, and branding work.
+
 ## Engineering focus
 
 - **Agent workflows:** keep model interpretation, recommendations, approval, and execution as separate stages.
