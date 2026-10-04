@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/profile-banner.svg" alt="Jason Lee engineering portfolio banner: evidence, evaluation, review, authorization, and scoped execution." width="100%" />
+</p>
+
 <h1 align="center">Jason Lee</h1>
 <p align="center"><strong>AI Systems Developer · Agent Reliability & Evaluation · Titan Zero</strong></p>
 <p align="center">Melbourne, Australia · <a href="mailto:jason@titanzero.io">jason@titanzero.io</a></p>
@@ -29,6 +33,10 @@ These are small, bounded suites. The intervals describe the synthetic test count
 - **Operational software:** build scoped APIs and offline-capable workflows with reviewable state changes.
 
 ## Selected projects
+
+<p align="center">
+  <img src="assets/profile-architecture.svg" alt="Portfolio map linking bounded test evidence and review boundaries to DecisionEngine, TrustEngine, Interaction Engine, Titan Zero Field Service Workforce, Climate Crew, and ForgeMesh." width="100%" />
+</p>
 
 | Project | Work |
 | --- | --- |
