@@ -27,6 +27,8 @@ A concrete example is **[Titan Zero PR #1201](https://github.com/Masterleeaus/Ti
 
 The work is designed around explicit company context, capability permissions, risk checks, execution receipts, and separate verification. I do not treat merge volume, agent agreement, or a green test as proof that a full product is production-ready.
 
+**Measured authority handoff result (4 October 2026): 0 of 17 blocked or unresolved scenarios produced a ready handoff.** The fixed 20-case evaluation also wrongly blocked 0 of 3 valid recommendations and produced requests for 0 of 2 wrong-company attempts. A deliberately simple recommendation-only baseline would proceed on 15 of those 17 blocked or unresolved cases. This measures Step 27 request preparation, not host execution. [Method, scenarios, full results and CI run](https://github.com/Masterleeaus/decision-engine#reproducible-authority-handoff-evaluation).
+
 ## Featured systems by architectural role
 
 | System | Role | Distinctive work |
