@@ -40,7 +40,7 @@ These are small, bounded suites. The intervals describe the synthetic test count
 
 ## Work in progress
 
-- **LLM-in-the-loop evaluation:** [Draft PR #2](https://github.com/Masterleeaus/decision-engine/pull/2) adds a 200-case synthetic proposer-to-gate harness. Its offline CI smoke check passes; a live-model evaluation has not run yet.
+- **LLM-in-the-loop evaluation:** [Draft PR #2](https://github.com/Masterleeaus/decision-engine/pull/2) adds a 200-case synthetic proposer-to-gate harness. The [offline CI smoke check](https://github.com/Masterleeaus/decision-engine/actions/runs/37174873332) passes; a live-model evaluation has not run yet.
 - **Field Service local checks:** a developer-local record lists 31/31 focused checks on temporary overlays. The tested implementation is unpublished and clean-checkout reproduction is pending, so this is development evidence rather than a public CI result. [Details and limits](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/blob/main/docs/working/2026-10-04-local-test-evidence.md).
 - **Climate Crew:** remains a prototype; I have not published a reproduced scientific result yet.
 
