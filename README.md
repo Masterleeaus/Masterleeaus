@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/profile-banner.svg" alt="Jason Lee engineering portfolio — evidence, evaluation, governed AI systems, and Titan Zero." width="100%" />
+</p>
 
 <h1 align="center">Jason Lee</h1>
 <p align="center"><strong>AI Systems Developer · Agent Reliability & Evaluation · Titan Zero</strong></p>
@@ -28,6 +31,21 @@ These are small, bounded suites. The intervals describe the synthetic test count
 - **Agent workflows:** keep model interpretation, recommendations, approval, and execution as separate stages.
 - **Evaluation:** use fixed scenarios, baselines, failure counts, and explicit test limits.
 - **Operational software:** build scoped APIs and offline-capable workflows with reviewable state changes.
+
+## Current Titan product naming
+
+The commercial Titan suite is currently organised as:
+
+| Product | Role | Brand colour |
+| --- | --- | --- |
+| **Titan Zero** | Primary conversational day-to-day AI experience | Neutral / suite identity |
+| **Titan Core** | System administration, configuration and suite management | Neutral / platform identity |
+| **Titan Build** | Growth, launch and new-business / new-vertical capabilities | Blue |
+| **Titan Desk** | Customer, sales, communications and front-office operations | Red |
+| **Titan Field** | Scheduling, dispatch, field execution and operational standards | Yellow |
+| **Titan Pay** | Payments, invoicing, reconciliation and money workflows | Green |
+
+Historical repository names are retained where they represent separate engineering experiments or earlier product generations; current commercial naming should use the table above.
 
 ## Selected projects
 
