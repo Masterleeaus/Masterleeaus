@@ -63,7 +63,11 @@ The tested implementation remains unpublished, and the runs used temporary execu
 
 These ideas are being translated into architecture, prototypes, and active software across my repositories. Individual systems are at different implementation stages; I aim to distinguish documented design from verified behavior.
 
-## Contact\n\nFor engineering, research, or collaboration enquiries: [masterlee.aus@gmail.com](mailto:masterlee.aus@gmail.com).\n\n## Where the ideas meet practice
+## Contact
+
+For engineering, research, or collaboration enquiries: [masterlee.aus@gmail.com](mailto:masterlee.aus@gmail.com).
+
+## Where the ideas meet practice
 
 - **[Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce)** — Applies the architecture to customers, jobs, scheduling, field work, offline operation, and a governed workforce.
 - **[Climate Crew](https://github.com/Masterleeaus/Climate-crew)** — Applies a related evidence-first approach to environmental research: independent investigation, provenance, competing hypotheses, falsification, and human validation.
